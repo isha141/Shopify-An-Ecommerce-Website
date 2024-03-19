@@ -1,0 +1,108 @@
+.listProduct{
+     display: flex;
+     align-items: center;
+     max-width: 100%; 
+     flex-direction: column;
+     height: 760px;
+     padding: 10px 20px;
+     border-radius: 6px;
+     background-color: white;
+     margin: 20px;
+}
+.list-product-main{
+   display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  gap:133px;
+  color: #454545;
+  max-width: 100%;
+  /* margin: 0px 20px; */
+}
+
+.list-product-format{ 
+   /* display: flex;  */
+   /* box-sizing: border-box; */
+   /* box-sizing: content-box; */
+   font-size: 20px;
+   width: 100%;
+   font-weight: 500;
+}
+.list-product-product-icon{
+ width: 45px;
+}
+.cross_icon{
+ width: 23px;
+ cursor: pointer; 
+ margin: auto;
+} 
+.list-product-all_product{
+   overflow-y: auto;
+}
+@media (max-width:1250px) {
+    .listProduct{
+      max-width: 80%; 
+      padding: 10px 10px;
+    }
+    .list-product-main{
+       font-size: 14px;
+       gap:100px;
+    }
+    .list-product-format{ 
+     gap:80px;
+    }
+    .list-product-product-icon{
+     width: 35px;
+    }
+    .cross_icon{
+    width: 18px;
+    cursor: pointer; 
+   } 
+}
+@media (max-width:950px) {
+    .listProduct{
+      max-width: 80%; 
+      padding: 10px 10px;
+    }
+    .list-product-main{
+       font-size: 12px;
+       gap:80px;
+    }
+    .list-product-format{ 
+     gap:60px;
+    }
+    .list-product-product-icon{
+     width: 35px;
+    }
+    .cross_icon{
+    width: 18px;
+    cursor: pointer; 
+   } 
+}
+@media (max-width:850px) {
+    .listProduct{ 
+      box-sizing: border-box;
+      max-width: 85%;  
+      height: 100%;
+      align-items: center;
+      padding: 10px 30px;
+      margin: 10px auto;
+      /* margin-top: 30px; */
+    }
+    .list-product-main{ 
+       max-width: 85%;  
+       font-size: 12px;
+       gap:30px;
+    }
+    .list-product-format{ 
+     gap:60px;
+    }
+    .list-product-product-icon{
+     width: 35px;
+    }
+    .cross_icon{
+    width: 18px;
+    cursor: pointer; 
+   } 
+}
